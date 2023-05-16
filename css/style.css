@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*mobile*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+div{
+    padding: 20px;
+}
+form img.logo{
+    height: 30%;
+    width: 25%;
+}
+form div.title-image{ 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+
+}
+form img.log-in{
+    height: 15%;
+}
+
+form p{
+    padding: 10px;
+    font-size: .9rem;
+    padding: -5px;
+}
+form label{
+    padding: 15px 10px;
+    flex-shrink: 0;
+    align-content: center;
+}
+div.email, div.password{
+    display: flex;
+    align-items: center;
+    border: 2px solid orange;
+    padding: 0.5rem;
+    margin: 10px;
+}
+
+div input.mail, input.pass{
+    background: none;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.mail, .pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+div input.mail:focus, input.pass:focus{
+    border-bottom: 2px solid blue;
+    color: orange;
+}
+div.rememberme a{
+    color: orange;
+    text-decoration: none;
+}
+div.rememberme a:hover{
+    text-decoration: underline;
+}
+div.rememberme input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    background-color: transparent;
+    outline: none;
+}
+
+div.rememberme input[type="checkbox"]:checked{
+    background-color: orange;
+    border: orange;
+    cursor: pointer;
+}
+
+div.rememberme input[type="checkbox"]:checked::before {
+    visibility: visible;
+}
+div.enter button{
+    display: flex;
+    background-color: rgba(197, 130, 5, 0.651);
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; 
+}
+div.enter button:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+div.enter span{
+    display:flex;
+    padding-top: 15px;
+    justify-content: center;
+}
+div.enter span a{
+    color: orange;
+    margin-left: 5px;
+    text-decoration: none;
+}
+div.enter span a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width:768px) {
+    body::before{
+        content: "";
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url(../img/side-image.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    form{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 40vw;
+        background-color: rgba(32, 6, 6, 0.644);
+        border-radius: 5px;
+        box-shadow: 3px 3px black;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    form img.logo{
+        padding: 15px;
+    }
+}

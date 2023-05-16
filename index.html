@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <form action="" class="form">
+        <img src="img/logo.svg" alt="logo" class="logo">
+        <div class="title-image">
+            <img src="img/log-in.svg" alt="log-in" class="log-in">
+            <h1>Faça seu login</h1>
+            
+        </div>
+        <p>Entre com suas informações de cadastro.</p>
+        <label for="iemail">E-mail</label>
+        <div class="email">
+            <img src="img/mail.svg" alt="email" class="mail" id="iemail">
+            <input type="email" id="iemail" name="email" required placeholder="Digite seu email" class="mail">
+        </div>
+        <label for="ipassword">Senha</label>
+        <div class="password">
+            <img src="img/lock.svg" alt="lock" class="pass">
+            <input type="password" name="password" id="ipassword" required placeholder="Digite sua senha." minlength="8" class="pass">
+            <img src="img/eye.svg" alt="">
+        </div>
+        <div class="rememberme">
+            <input type="checkbox" id="iremember" name="remember" checked>
+            <label for="iremember">Lembre-me</label>
+            <a href="#">Esqueci minha Senha</a>
+        </div>
+        <div class="enter">
+            <button>Entrar</button>
+            <span>Não tem uma conta?<a href="#">Registre-se</a></span>
+        </div>
+    </form>
+</body>
+</html>
